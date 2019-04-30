@@ -1,0 +1,97 @@
+News Features:
+['Unnamed: 0', 'id', 'page_id', 'status_id', 'parent_id', 'status_message', 'status_message_without_tags', 'post_author_id', 'post_type', 'status_type', 'link_name', 'status_link', 'status_published', 'num_shares', 'processed_all_comments', 'processed_all_reactions', 'error_message_for_comments', 'error_message_for_reactions', 'processed_all_attachments', 'error_message_for_attachments', 'status_link_cleaned', 'url', 'fb_page', 'num_comment', 'num_share', 'num_reaction', 'num_reaction_cleaned', 'num_comment_cleaned', 'num_share_cleaned', 'num_reaction_count', 'num_comment_count', 'num_share_count', 'created_time', 'month', 'year', 'numericMonth']
+('Columns in News = ', 36)
+Clikbaits Features:
+['Unnamed: 0', 'id', 'page_id', 'status_id', 'parent_id', 'status_message', 'status_message_without_tags', 'post_author_id', 'post_type', 'status_type', 'link_name', 'status_link', 'status_published', 'num_share', 'processed_all_comments', 'processed_all_reactions', 'error_message_for_comments', 'error_message_for_reactions', 'processed_all_attachments', 'error_message_for_attachments', 'status_link_cleaned', 'url', 'fb_page', 'num_reaction', 'num_comment', 'num_reaction_cleaned', 'num_comment_cleaned', 'num_share_cleaned', 'num_reaction_count', 'num_comment_count', 'num_share_count', 'created_time', 'month', 'year', 'numericMonth']
+('Columns in Clickbaits = ', 35, '\n')
+('Unique elems in column fb_page for clickbait = ', set(['facebook.com/livekijken', 'facebook.com/trendnieuws', 'facebook.com/ditisgeniaal', 'facebook.com/leeshetpuntnu', 'facebook.com/viralsonline1', 'facebook.com/1567673943543704', 'facebook.com/leeftips.nl', 'facebook.com/nieuwsco', 'facebook.com/1661870274079781', 'facebook.com/verhalen.co', 'facebook.com/toptrendingnl', 'facebook.com/688141944701187', 'facebook.com/1931812020438753', 'facebook.com/vandaagviraal', 'facebook.com/viralnextnieuws', 'facebook.com/187487161609007', 'facebook.com/pranksternl', 'facebook.com/kingbreaknl', 'facebook.com/forestfeed', 'facebook.com/volgendevideo', 'facebook.com/1213051412048021', 'facebook.com/hetdelenwaard', 'facebook.com/1785829101687628', 'facebook.com/1721172708118846', 'facebook.com/foodviral', 'facebook.com/feitjesenweetjes.nl', 'facebook.com/410280812497912', 'facebook.com/arkinoh', 'facebook.com/blijfpositiefcom', 'facebook.com/572385656268218', 'facebook.com/curioctopus.nl', 'facebook.com/leeshetnu.nl', 'facebook.com/662965343876026', 'facebook.com/1568382686520046', 'facebook.com/viral2day.nl', 'facebook.com/viraltje', 'facebook.com/195089190827932', 'facebook.com/newsnernederlands', 'facebook.com/zelfmaakideetjes', 'facebook.com/breekdedag', 'facebook.com/bekijkdezevideo', 'facebook.com/secretmancave', 'facebook.com/indrukwekkend.nu', 'facebook.com/gezondeideetjes', 'facebook.com/386130775068830', 'facebook.com/grappig.co', 'facebook.com/lhoriginale', 'facebook.com/brawnl', 'facebook.com/106727739817828', 'facebook.com/1315496065181384', 'facebook.com/ongelofelijk.eu', 'facebook.com/1364984373581269', 'facebook.com/echte.mannen.wereld', 'facebook.com/dagelijks.nu', 'facebook.com/luidt.nl', 'facebook.com/viraaltjes', 'facebook.com/deelze.nl', 'facebook.com/straatvidsnl', 'facebook.com/bengbengnl', 'facebook.com/eetradar', 'facebook.com/architectdistrict', 'facebook.com/lijpeshitt', 'facebook.com/viraalvandaag']))
+('Unique elems in column fb_page for news = ', set(['facebook.com/metro', 'facebook.com/geenstijlnl', 'facebook.com/nu.nl', 'facebook.com/volkskrant', nan, 'facebook.com/telegraaf', 'facebook.com/bnr.nieuwsradio', 'facebook.com/rtlnieuws', 'facebook.com/trouw.nl', 'facebook.com/nrc', 'facebook.com/decorrespondent', 'facebook.com/hetfd', 'facebook.com/paroolnl', 'facebook.com/ad.nl', 'facebook.com/190231243842', 'facebook.com/103652819717294', 'facebook.com/refdag', 'facebook.com/nos', 'facebook.com/elsevierweekblad']), '\n')
+(116522, 4)
+(29131, 4)
+SVC REPORT:
+              precision    recall  f1-score   support
+
+           c       0.48      0.64      0.55     11866
+           n       0.68      0.53      0.59     17265
+
+   micro avg       0.57      0.57      0.57     29131
+   macro avg       0.58      0.58      0.57     29131
+weighted avg       0.60      0.57      0.58     29131
+
+
+KN REPORT (most likely better):
+              precision    recall  f1-score   support
+
+           c       0.60      0.54      0.57     11866
+           n       0.70      0.75      0.73     17265
+
+   micro avg       0.66      0.66      0.66     29131
+   macro avg       0.65      0.64      0.65     29131
+weighted avg       0.66      0.66      0.66     29131
+
+
+SVM REPORT:
+              precision    recall  f1-score   support
+
+           c       0.57      0.62      0.59     11866
+           n       0.72      0.68      0.70     17265
+
+   micro avg       0.65      0.65      0.65     29131
+   macro avg       0.64      0.65      0.64     29131
+weighted avg       0.66      0.65      0.65     29131
+
+
+BAGGING REPORT:
+              precision    recall  f1-score   support
+
+           c       0.62      0.52      0.57     11866
+           n       0.70      0.78      0.74     17265
+
+   micro avg       0.68      0.68      0.68     29131
+   macro avg       0.66      0.65      0.65     29131
+weighted avg       0.67      0.68      0.67     29131
+
+
+DECISION TREE REPORT:
+              precision    recall  f1-score   support
+
+           c       0.59      0.53      0.55     11866
+           n       0.70      0.75      0.72     17265
+
+   micro avg       0.66      0.66      0.66     29131
+   macro avg       0.64      0.64      0.64     29131
+weighted avg       0.65      0.66      0.65     29131
+
+
+PERCEPTRON REPORT:
+              precision    recall  f1-score   support
+
+           c       0.47      0.75      0.58     11866
+           n       0.71      0.43      0.53     17265
+
+   micro avg       0.56      0.56      0.56     29131
+   macro avg       0.59      0.59      0.56     29131
+weighted avg       0.61      0.56      0.55     29131
+
+
+SGD REPORT:
+              precision    recall  f1-score   support
+
+           c       0.82      0.07      0.12     11866
+           n       0.61      0.99      0.75     17265
+
+   micro avg       0.61      0.61      0.61     29131
+   macro avg       0.71      0.53      0.44     29131
+weighted avg       0.69      0.61      0.50     29131
+
+
+MULTINOMIAL-NB REPORT:
+              precision    recall  f1-score   support
+
+           c       0.57      0.33      0.42     11866
+           n       0.64      0.83      0.72     17265
+
+   micro avg       0.63      0.63      0.63     29131
+   macro avg       0.61      0.58      0.57     29131
+weighted avg       0.61      0.63      0.60     29131
+
