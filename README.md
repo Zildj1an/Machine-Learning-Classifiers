@@ -11,5 +11,5 @@ Chose the one that best fits your data set: low-dimensional, high-dimensional, o
   Additionaly, other three classifiers are tested:
   
   + Perceptron
-  + SGD (good for data samples with more than 100k samples)
+  + SGD (good for data sets with more than 100k samples)
   + Multinomial-NB
