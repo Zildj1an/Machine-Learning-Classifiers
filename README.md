@@ -6,7 +6,7 @@ Chose the one that best fits your data set: low-dimensional, high-dimensional, o
   + K-Neighbors 
   + Support Vector Machine
   + Bagging (Ensemble method)
-  + Decission Tree
+  + Decision Tree
   + Perceptron
   + SGD 
   + Multinomial-NB
