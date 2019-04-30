@@ -77,9 +77,10 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2, rando
 print(x_train.shape)
 print(x_test.shape)
 
-# Been a low-dimensional feature set, if Linear SVC fails a good option is KNeighbors.
+# Been a low-dimensional feature set, if Linear SVC fails a good option is KNeighbors for low-dimensional.
 # If KNeighbors fails, a good alternative is SVM or perhaps ensemble methods (like Bagging).
 # Other estimators included that will -most likely- work poorly than KN are Decision trees,Perceptron and MultinomialNB.
+# SGD will probably work good on high-dimensional (>100k samples)
 
 # (1) Create the model
 SVCclf = LinearSVC()
