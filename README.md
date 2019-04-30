@@ -7,7 +7,9 @@ Chose the one that best fits your data set: low-dimensional, high-dimensional, o
   + Support Vector Machine
   + Bagging (Ensemble method)
   + Decission Tree
+  
   Additionaly, other three classifiers are tested:
+  
   + Perceptron
   + SGD (good for data samples with more than 100k samples)
   + Multinomial-NB
