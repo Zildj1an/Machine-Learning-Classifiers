@@ -1,4 +1,4 @@
-# Machine-Learning-Classifier
+# Machine-Learning-Classifiers
 Chose the one that best fits your data set: low-dimensional, high-dimensional, or sparsed.
 
 * The following estimators are used:
