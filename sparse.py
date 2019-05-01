@@ -125,3 +125,9 @@ model(X,y)
 # But normalized measures of precision and recall improve
 
 model(X_normalized,y)
+
+# def feature_extraction(text):
+#    urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', text)
+#    extracted_features = [len(text), text.count('!'), len(urls)]
+#    return extracted_features
+
