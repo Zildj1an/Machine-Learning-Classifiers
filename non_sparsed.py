@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy
+import significance
 from sklearn import preprocessing
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
@@ -10,17 +11,6 @@ from sklearn.ensemble import BaggingClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.linear_model import SGDClassifier, Perceptron
 from sklearn.naive_bayes import MultinomialNB
-
-# SIGNIFICANCE TEST (For R)
-def significance(file_name, y_pred,y_test):
-	f1 = open(file_name, 'w+')
-
-	for i in range(0,len(y_test)): 
-		if y_pred[i] == y_test[i]: 
-			f1.write("1") 
-		else: 
-			f1.write("0")
-	f1.close
 
 ############################
 # 1 PREPARATION		       #
@@ -130,7 +120,7 @@ MNBy_pred     = MNBclf.predict(x_test)
 #top_feats_c = numpy.argsort(SVCclf.coef_[0])[:10]
 
 # Create column for signifance test (p-value)
-# significance('bagging_column', Baggingy_pred,y_test)
+# significance.column('bagging_column', Baggingy_pred,y_test)
 
 # (4) Report results
 print("SVC REPORT:")
