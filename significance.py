@@ -4,7 +4,7 @@ def columns(file_name, y_pred,y_test):
 
 	for i in range(0,len(y_test)): 
 		if y_pred[i] == y_test[i]: 
-			f1.write("1") 
+			f1.write("1\n") 
 		else: 
-			f1.write("0")
+			f1.write("0\n")
 	f1.close
