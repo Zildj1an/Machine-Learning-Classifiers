@@ -19,4 +19,12 @@ Chose the one that best fits your data set: low-dimensional, high-dimensional, o
 
 # Significance and P-Value
 Having better report results is not always caused by a better model, but could be just a coincidence. Therefore, it is interesting to discuss the statistical significance of those differences between estimators, computing the P-Value.
-Since the data is formed by dependent and paired samples I used **McNemar's test** in an R script (after obatining the desired column with https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance.py)
+Since the data is formed by dependent and paired samples you can use **McNemar's test** in an R script (https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance/significance.R), after obatining the desired column with https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance.py).
+For instance, I did so between the two best classifiers according to the reports (Naive Bayes and Linear SVC) and obtained:
+
+```
+McNemar's Chi-squared test with continuity correction
+
+data:  clf1 and clf2
+McNemar's chi-squared = 0.80856, df = 1, p-value = 0.3685
+```
