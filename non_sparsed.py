@@ -120,7 +120,7 @@ MNBy_pred     = MNBclf.predict(x_test)
 #top_feats_c = numpy.argsort(SVCclf.coef_[0])[:10]
 
 # Create column for signifance test (p-value)
-# significance.column('bagging_column', Baggingy_pred,y_test)
+# significance.columns('bagging_column', Baggingy_pred,y_test)
 
 # (4) Report results
 print("SVC REPORT:")
