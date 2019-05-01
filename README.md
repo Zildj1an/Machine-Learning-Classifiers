@@ -18,5 +18,5 @@ Chose the one that best fits your data set: low-dimensional, high-dimensional, o
 * I have tested both situations with the data in csv format and uploaded the reports: https://github.com/Zildj1an/Machine-Learning-Classifiers/tree/master/report.
 
 # Significance and P-Value
-Having better report results is not always caused by a better model, but could be just a coincidence. Therefore, it is interesting to discuss the \textbf{significance} of those differences between estimators, computing the P-Value.
-Since the data is formed by dependent and paired samples I used \textbf{McNemar's test} in an R script (after obatining the desired column with significance.py)
+Having better report results is not always caused by a better model, but could be just a coincidence. Therefore, it is interesting to discuss the statistical significance of those differences between estimators, computing the P-Value.
+Since the data is formed by dependent and paired samples I used **McNemar's test** in an R script (after obatining the desired column with significance.py)
