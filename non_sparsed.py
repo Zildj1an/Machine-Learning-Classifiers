@@ -112,6 +112,13 @@ SGDy_pred     = SGDclf.predict(x_test)
 MNBy_pred     = MNBclf.predict(x_test)
 #print(KNy_pred)
 
+# Print most important features for LinearSVC
+# sort the features by feature weight and show the first 10 (for news)
+#top_feats_n = numpy.argsort(SVCclf.coef_[0])[-10:]
+# sort the features by feature weight and show the last 10 (for clickbait)
+#top_feats_c = numpy.argsort(SVCclf.coef_[0])[:10]
+
+
 # (4) Report results
 print("SVC REPORT:")
 print(classification_report(y_test, SVCy_pred))
