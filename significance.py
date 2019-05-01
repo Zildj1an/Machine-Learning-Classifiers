@@ -1,5 +1,5 @@
 # SIGNIFICANCE TEST (For R)
-def significance(file_name, y_pred,y_test):
+def columns(file_name, y_pred,y_test):
 	f1 = open(file_name, 'w+')
 
 	for i in range(0,len(y_test)): 
