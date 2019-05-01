@@ -1,6 +1,6 @@
 # change the directory
 getwd()
-table_1 = read.table('bagging_column',header=FALSE) 
+table_1 = read.table('mnb_columns',header=FALSE) 
 table_2 = read.table("svc_column", header=FALSE)
 clf1 = table_1[[1]] 
 clf2 = table_2[[1]]
