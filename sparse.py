@@ -16,7 +16,7 @@ def model(X,y):
     # print(x_train.shape)
     # print(x_test.shape)
 
-        
+
     # (1) Create the model
     SVCclf = LinearSVC()
     KNclf  = KNeighborsClassifier()
@@ -107,9 +107,9 @@ for index, row in clickbait.iterrows():
 # min_df is the minimum frequency
 word_vectorizer = CountVectorizer(analyzer='word', min_df=4)
 X = word_vectorizer.fit_transform(texts)
-print("Shape of X: ", X.shape)
-print("Vocabulary", word_vectorizer.vocabulary_)
-print("Vocabulary length = ", len(word_vectorizer.vocabulary_))
+#print("Shape of X: ", X.shape)
+#print("Vocabulary", word_vectorizer.vocabulary_)
+#print("Vocabulary length = ", len(word_vectorizer.vocabulary_))
 
 # 'Normalize' the count matrix X (precisely scale down the impact of higher frequency ones)
 tfid = TfidfTransformer()
