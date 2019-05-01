@@ -15,4 +15,4 @@ Chose the one that best fits your data set: low-dimensional, high-dimensional, o
 
 * For sparse data (like the text I used in https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/sparse.py), K-Neighbors is NOT suitable and I suggest Linear SVC.Other good option for low-dimensional text data would be Naive Bayes
 
-* I have tested both situations with the data in csv format and uploaded the reports.
+* I have tested both situations with the data in csv format and uploaded the reports: https://github.com/Zildj1an/Machine-Learning-Classifiers/tree/master/report.
