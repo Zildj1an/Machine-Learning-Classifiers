@@ -146,3 +146,13 @@ print(classification_report(y_test, SGDy_pred))
 print("")
 print("MULTINOMIAL-NB REPORT:")
 print(classification_report(y_test, MNBy_pred))
+
+# McNemar Significance Test (alternative to R)
+# tb = mcnemar_table(y_target=numpy.array(y_test), y_model1=SGDy_pred, y_model2=MNBy_pred)
+# Test using McNemar
+#chi2, p = mcnemar(ary=tb, exact=True)
+#print('chi-squared:', chi2)
+#print('p-value:', p)
+#alpha = 0.5
+#if p > alpha:
+#print("No significant difference!")
