@@ -29,3 +29,9 @@ data:  clf1 and clf2
 McNemar's chi-squared = 0.80856, df = 1, p-value = 0.3685
 ```
 In thic case, the p-value is not low enough (>0.05), hence we can NOT safely say that the differences in the results are truly caused by differently performing classifiers (we can't reject the null hypothesis). 
+
+# Visualize the Decision Tree
+If it is not overfited it can be visualized, and then the .dot file visualized with ```xdg``` and converted with:
+```
+dot -Tpdf tree.dot -o tree.pdf
+```
