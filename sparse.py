@@ -22,7 +22,7 @@ def model(X,y):
     KNclf  = KNeighborsClassifier()
     SVMclf = svm.SVC()
     Bagging_clf = BaggingClassifier(KNeighborsClassifier())
-    DTclf = DecisionTreeClassifier()
+    DTclf = DecisionTreeClassifier(max_depth=7)
     Pclf = Perceptron()
     SGDclf = SGDClassifier()
     MNBclf = MultinomialNB()
