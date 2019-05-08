@@ -15,7 +15,8 @@ def model(X,y):
     x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1)
     # print(x_train.shape)
     # print(x_test.shape)
-
+  
+   # You could just use an array of estimators but I rather this way for modifying specific fits, removing parts...
 
     # (1) Create the model
     SVCclf = LinearSVC()
