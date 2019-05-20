@@ -38,6 +38,15 @@ def model(X,y):
     SGDclf.fit(x_train, y_train)
     MNBclf.fit(x_train, y_train)
 
+    # Visualize the tree
+    # For open: dot -Tpdf tree.dot -o tree.pdf
+    # Requires imports: 
+    #from sklearn.datasets import load_iris
+    #from sklearn import tree
+    #iris = load_iris()
+    #DTclf = DTclf.fit(x_train, y_train)
+    #tree.export_graphviz(DTclf, out_file='tree.dot')
+    
     # (3) Predict
     SVCy_pred     = SVCclf.predict(x_test)
     KNy_pred      = KNclf.predict(x_test)
