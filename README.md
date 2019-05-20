@@ -31,13 +31,14 @@ McNemar's chi-squared = 0.80856, df = 1, p-value = 0.3685
 In thic case, the p-value is not low enough (>0.05), hence we can NOT safely say that the differences in the results are truly caused by differently performing classifiers (we can't reject the null hypothesis). 
 
 # Visualize the Decision Tree
+View line 40 of sparse.py
 If it is not overffited it probably can be visualized, and then the .dot file visualized with ```xdg``` and converted with:
 
 ```
 $ dot -Tpdf tree.dot -o tree.pdf
 ```
 
-Here I show the decision tree for the sparse data set using a depth of five:
+Here I show the decision tree for the sparse data set using a depth of three (others can be found in the folder):
 
 ![](https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/tree_images/tree.jpg)
 
