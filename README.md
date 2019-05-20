@@ -40,5 +40,5 @@ $ dot -Tpdf tree.dot -o tree.pdf
 
 Here I show the decision tree for the sparse data set using a depth of three (others can be found in the folder):
 
-![](https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/tree_images/tree_small.pdf)
+![](https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/tree_images/tree_small.jpg)
 
