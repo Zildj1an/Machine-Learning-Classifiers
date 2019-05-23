@@ -17,6 +17,23 @@ Chose the one that best fits your data set: low-dimensional, high-dimensional, o
 
 * I have tested both situations with the data in csv format and uploaded the reports: https://github.com/Zildj1an/Machine-Learning-Classifiers/tree/master/report.
 
+# How to improve the performance
+Several techniques can be applied over your model to make it work even better. Mainly, k-Fold-Cross Validation with ```cross_val_score```, fixing the class imbalance with the balanced mode, and hyperparameter optimization with both Random and Grid search parameter tuning. This is an example of Grid:
+
+```
+SGDclf = SGDClassifier(max_iter=1500)
+vals = [0.0001,0.001, 0.01, 0.1, 1, 10]
+possible_params = [{'alpha': vals}]
+grid = GridSearchCV(estimator=SGDclf,param_grid=possible_params, scoring = 'accuracy', cv=2)
+grid_result = grid.fit(x_train, y_train)
+print("best params = ")
+print(grid_result.best_params_)
+---------------------------------------------------
+OUTPUT:
+best params = 
+{'alpha': 0.001}
+```
+
 # Significance and P-Value
 Having better report results is not always caused by a better model, but could be just a coincidence. Therefore, it is interesting to discuss the statistical significance of those differences between estimators, computing the P-Value.
 Since the data is formed by dependent and paired samples you can use **McNemar's test** in an R script (https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance/significance.R), after obtaining the desired column with https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance.py).
