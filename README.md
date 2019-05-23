@@ -17,7 +17,7 @@ Chose the one that best fits your data set: low-dimensional, high-dimensional, o
 
 * I have tested both situations with the data in csv format and uploaded the reports: https://github.com/Zildj1an/Machine-Learning-Classifiers/tree/master/report.
 
-# How to improve the performance
+# How to improve the performance?
 Several techniques can be applied over your model to make it work even better. Mainly, k-Fold-Cross Validation with ```cross_val_score```, fixing the class imbalance with the balanced mode, and hyperparameter optimization with both Random and Grid search parameter tuning. This is an example of Grid:
 
 ```
