@@ -33,6 +33,7 @@ OUTPUT:
 best params = 
 {'alpha': 0.001}
 ```
+Also, in terms of code refactoring, is easier just to loop through an array of possible estimators, instead of going one by one as I did. I prefer this approach because I can personalise each parameter easily.
 
 # Significance and P-Value
 Having better report results is not always caused by a better model, but could be just a coincidence. Therefore, it is interesting to discuss the statistical significance of those differences between estimators, computing the P-Value.
