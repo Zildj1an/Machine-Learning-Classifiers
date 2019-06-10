@@ -40,11 +40,11 @@ Having better report results is not always caused by a better model, but could b
 ```
   Independant samples?  ---- YES -----> t-test
    |
-   NO ---> Categorical? --- YES ---> McNemar's text
+   NO -----> Categorical? ---- YES -----> McNemar's test
             |
-            NO ---> Normal distribution? --- YES ---> Paired t-test
+            NO -----> Normal distribution? ---- YES -----> Paired t-test
                         |
-                        NO--> Wilcoxon signed rank test
+                        NO -----> Wilcoxon signed rank test
 ```
 Since the data is formed by dependent paired samples and categorical labels you can use **McNemar's test** in an R script (https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance/significance.R), after obtaining the desired column with https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance.py).
 For instance, I did so between the two best classifiers according to the reports (Naive Bayes and Linear SVC) and obtained:
