@@ -36,8 +36,17 @@ best params =
 Also, in terms of code refactoring, it's easier just to loop through an array of possible estimators, instead of going one by one as I did. I prefer this approach because I can personalise each parameter easily.
 
 # Significance and P-Value
-Having better report results is not always caused by a better model, but could be just a coincidence. Therefore, it is interesting to discuss the statistical significance of those differences between estimators, computing the P-Value.
-Since the data is formed by dependent and paired samples you can use **McNemar's test** in an R script (https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance/significance.R), after obtaining the desired column with https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance.py).
+Having better report results is not always caused by a better model, but could be just a coincidence. Therefore, it is interesting to discuss the statistical significance of those differences between estimators, computing the P-Value. Which statistical test should you do? I think this can help:
+```
+  Independant samples?  ---- YES -----> t-test
+   |
+   NO ---> Categorical? --- YES ---> McNemar's text
+            |
+            NO ---> Normal distribution? --- YES ---> Paired t-test
+                        |
+                        NO--> Wilcoxon signed rank test
+```
+Since the data is formed by dependent paired samples and categorical labels you can use **McNemar's test** in an R script (https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance/significance.R), after obtaining the desired column with https://github.com/Zildj1an/Machine-Learning-Classifiers/blob/master/significance.py).
 For instance, I did so between the two best classifiers according to the reports (Naive Bayes and Linear SVC) and obtained:
 
 ```
